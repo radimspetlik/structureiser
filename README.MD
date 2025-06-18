@@ -1,6 +1,8 @@
 # StructuReiser: A Structure-preserving Video Stylization Method
 
-This repository accompanies the paper accepted to **COMPUTER GRAPHICS Forum** (Vol. 44, 2025, No. 4) by Radim Spetlik, David Futschik, and Daniel Sykora.
+[project page](https://dcgi.fel.cvut.cz/~sykorad/structureiser.html) | [paper](https://dcgi.fel.cvut.cz/~sykorad/Spetlik25-EGSR.pdf) | [video](https://www.youtube.com/watch?v=gbgJhk138W8)
+
+This repository accompanies [a paper](https://dcgi.fel.cvut.cz/~sykorad/structureiser.html) accepted to EGSR 2025 (to appear in Computer Graphics Forum 44(4), 2025) by Radim Spetlik, David Futschik, and Daniel Sykora.
 
 ![Teaser](img/teaser.png)
 
@@ -97,7 +99,7 @@ If you use StructuReiser in your work, please cite our paper:
 
 ```bibtex
 @article{spetlik2025structurereiser,
-  title={StructuReiser: A Structure-preserving Video Stylization Method},
+  title="{StructuReiser}: {A} Structure-preserving Video Stylization Method",
   author={Spetlik, Radim and Futschik, David and Sykora, Daniel},
   journal={Computer Graphics Forum},
   volume={44},
