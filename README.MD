@@ -25,7 +25,7 @@ This repository is designed to run on Linux systems with NVIDIA GPUs.
 
 This installation guide assumes you have `Python 3.11` installed on your system with `Pipenv` package.
 
-If you plan to use Singularity, you will also need `Singularity` installed on your system.
+If you plan to use Singularity, you will also need `Singularity` (or Apptainer) installed on your system.
 
 ## Installation
 
