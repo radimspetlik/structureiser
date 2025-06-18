@@ -1,0 +1,28 @@
+Bootstrap:docker
+From:python:3.11-slim
+
+%environment
+
+%runscript
+    . /etc/profile
+    ./run.sh
+
+%files
+    @SCRIPT_DIR@/Pipfile /opt/proj/Pipfile
+
+%post
+    apt-get -y update && apt-get install -y imagemagick ffmpeg git
+    # Create some common mountpoints for systems without overlayfs
+    mkdir /scratch
+    mkdir /apps
+
+    . /etc/profile
+    pip install --upgrade pip
+    pip install pipenv
+    cd /opt/proj
+    pipenv lock
+    pipenv install --system
+    pipenv --rm
+
+    cd /usr/local/lib/python3.11/site-packages/torch/lib
+    ln -s libnvrtc-*.so.11.2 libnvrtc.so

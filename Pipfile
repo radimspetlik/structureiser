@@ -1,0 +1,46 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu118"
+verify_ssl = false
+name = "torch"
+
+[packages]
+torch = {version= "==2.1.0", index = "torch"}
+torchvision = {version=">=0.16.0", index = "torch"}
+numpy = "*"
+blobfile = "*"
+tqdm = "*"
+pyyaml = "*"
+pillow = "*"
+opencv-python = "*"
+h5py = "*"
+pylint = "*"
+scikit-image = "*"
+scipy = "*"
+imgaug = "*"
+einops = "*"
+omegaconf = "*"
+transformers = ">=4.36"
+tokenizers = ">=0.14.1"
+controlnet-aux = "==0.0.3"
+mediapipe = "*"
+xformers = {version="==0.0.22.post4", index = "torch"}
+open-clip-torch = ">=2.23.0"
+diffusers="*"
+matplotlib="*"
+av="==11.0.0"
+tensorboard="*"
+timm="*"
+accelerate="*"
+kornia="*"
+fvcore="*"
+mpld3 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
